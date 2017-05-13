@@ -1,12 +1,13 @@
 # coding=utf-8
-import requests
-from lxml import etree
-from Predict import predict
-from bs4 import BeautifulSoup
-import urllib
-import re
 import random
-import collections
+import re
+import urllib
+
+import requests
+from bs4 import BeautifulSoup
+from lxml import etree
+
+from captcha.Predict import predict
 
 url = 'http://jw.xhsysu.cn/'
 host = 'jw.xhsysu.cn'
@@ -74,6 +75,7 @@ def login(xh, password, action, itchat, username):
 
     for i in cookies:
         Cookie = i.name + "=" + i.value
+    # 查询成绩
     if action == 'GET_SCORE':
         url2 = url+'xscjcx.aspx?'
         head = {
@@ -105,6 +107,7 @@ def login(xh, password, action, itchat, username):
         })
         response = s.post(url2 + data2, data=data, headers=head)
         return getScore(response.content.decode('gb2312'))
+    # 一键评教
     elif action == 'DO_EVALUATE':
         pj_url = []
         li = soup.find('ul', {'class': 'nav'}).find_all('li')

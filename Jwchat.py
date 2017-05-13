@@ -3,7 +3,7 @@ import itchat
 from urllib import urlretrieve
 import json
 from itchat.content import *
-from login import *
+from JwLogin import *
 import requests
 import os
 import thread
