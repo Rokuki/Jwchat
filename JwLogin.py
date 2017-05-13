@@ -41,7 +41,7 @@ def login(xh, password, action, itchat, username):
     cookies = s.cookies
     # print cookies
     # 验证码目录
-    Dstdir = "download_code/"
+    Dstdir = "captcha/download_code/"
     # print ('save the checkcode to the' + Dstdir + 'code.jpg' + "\n")
     with open(Dstdir + 'code.jpg', 'wb') as f:
         for chunk in CheckCodeResponse.iter_content(chunk_size=1024):
