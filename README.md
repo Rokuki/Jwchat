@@ -4,5 +4,5 @@
 ![images](https://github.com/Rokuki/Jwchat/blob/master/screenshot/find_img.jpg)
 ![images](https://github.com/Rokuki/Jwchat/blob/master/screenshot/do_evaluate.jpg)
 
-识别验证码参考自https://www.iswin.org/2016/10/15/Simple-CAPTCHA-Recognition-with-Machine-Learning/  感谢iswin
+识别验证码参考自iswin的 https://www.iswin.org/2016/10/15/Simple-CAPTCHA-Recognition-with-Machine-Learning/
 感谢littlecodersh的itchat https://github.com/littlecodersh/ItChat
