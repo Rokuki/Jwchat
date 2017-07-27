@@ -1,6 +1,14 @@
-# Jwchat
-基于itchat开发的正方教务助手，可自动识别教务验证码，查成绩，一键评教
+Jwchat
+=================================== 
+  基于itchat开发的正方教务助手，可自动识别教务验证码，查成绩，一键评教
+  
+### Usage
 
+  'python Jwchat.py cmdQR'<br>
+  /Jwchat/captcha/    ---验证码识别
+  
+
+### Screenshot
 <img src="https://github.com/Rokuki/Jwchat/blob/master/screenshot/check_score.jpg" width="50%" height="50%">
 <img src="https://github.com/Rokuki/Jwchat/blob/master/screenshot/find_img.jpg" width="50%" height="50%">
 <img src="https://github.com/Rokuki/Jwchat/blob/master/screenshot/do_evaluate.jpg" width="50%" height="50%">
